@@ -1,4 +1,4 @@
-# WindowsDNS-ETL2HEC
+# WindowsEVTX-ETL_2HEC
 This script **requires** Powershell 7 to run. https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2
 
 1. Download and unzip files.
