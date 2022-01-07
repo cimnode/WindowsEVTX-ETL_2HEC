@@ -45,6 +45,6 @@ for( $i = 0; $i -lt $JobQuantity; $i++)
 }
 write-host "Waiting for jobs to finish."
 
-get-job | wait-job
+get-job | wait-job | remove-job
 
 write-host "Script complete: "(Get-Date)
