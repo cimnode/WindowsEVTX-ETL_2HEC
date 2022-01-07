@@ -1,5 +1,5 @@
 {
-	"SplunkURL":"https://pony:8088/services/collector",
-	"SplunkHECToken":"c68d66cf-88f7-4a48-b37c-e7e4e4962823",
-	"SplunkIndex":"main"
+	"SplunkURL":"https://yourservername:8088/services/collector",
+	"SplunkHECToken":"hec_token_goes_here",
+	"SplunkIndex":"main_or_other_index"
 }
