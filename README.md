@@ -1,4 +1,5 @@
 # WindowsDNS-ETL2HEC
+This script **requires** Powershell 7 to run. https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2
 
 1. Download and unzip files.
 2. Edit SplunkSettings.json with appropriate values.
