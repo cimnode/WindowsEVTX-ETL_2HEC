@@ -5,7 +5,7 @@ This script **requires** Powershell 7 to run. https://docs.microsoft.com/en-us/p
 2. Edit SplunkSettings.json with appropriate values.
   - HEC token must already be created
   - Follow JSON format exactly
-3. Unblock ps1 scripts so they can be run.
+3. Unblock ps1 scripts so they can be run. (Run commands from within directory containing files to be unblocked.)
 ```
   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 
