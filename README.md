@@ -16,4 +16,5 @@
    .\Run_Win_ETL-EVTX_2HEC_Threaded.ps1 -EventFilePath C:\Windows\System32\winevt\Logs\Application.evtx -SecondsMinusEarliest 3000000 -SecondsMinusLatest 0
    .\Run_Win_ETL-EVTX_2HEC_Threaded.ps1 -EventFilePath C:\Windows\System32\winevt\Logs\RemoteDesktopServices-RemoteFX-SessionLicensing-Debug.etl -SecondsMinusEarliest 3000000 -SecondsMinusLatest 0
 ```
-SecondsMinusEarliest and SecondsMinusLatest set the time range the events are pulled from. Earliest would be the oldest 'TimeCreated' value looking backwards in seconds. And latest would be the 'TimeCreated' of the newest event.
+SecondsMinusEarliest and SecondsMinusLatest set the time range the events are pulled from. Earliest would be the oldest 'TimeCreated' value looking backwards in seconds. And latest would be the 'TimeCreated' of the newest event. 
+If the EventFilePath has a space, enclose it in double quotes.
