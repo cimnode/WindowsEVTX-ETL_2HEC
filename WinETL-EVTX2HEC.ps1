@@ -39,7 +39,7 @@ $WindowsEventData = Get-WinEvent -FilterHashtable $args -oldest
 
 "Event retrieval complete: " + (Get-Date)
 
-# Process the event logs handed to function and begin forwarding. Batches should be sent in groups of 50.
+# Process the event logs handed to function and begin forwarding. Batches seem to work best in batches of 500.
 $i = 1
 foreach( $eventObject in $WindowsEventData )
 {
