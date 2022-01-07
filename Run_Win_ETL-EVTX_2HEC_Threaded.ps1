@@ -36,7 +36,7 @@ for( $i = 0; $i -lt $JobQuantity; $i++)
 {
 	write-host "Running batch. Earliest seconds: "$job_start_seconds", Latest seconds: "$job_end_seconds
 		
-	start-threadjob -ScriptBlock {.\WinETL2HEC.ps1 -EventFilePath "$using:EventFilePath" -SecondsMinusEarliest $using:batch_start_seconds -SecondsMinusLatest $using:batch_end_seconds} 
+	start-threadjob -ScriptBlock {.\WinETL-EVTX2HEC.ps1 -EventFilePath "$using:EventFilePath" -SecondsMinusEarliest $using:batch_start_seconds -SecondsMinusLatest $using:batch_end_seconds} 
 	
 	# This is outside of threaded-job
 	$job_start_seconds = $job_end_seconds - 1
