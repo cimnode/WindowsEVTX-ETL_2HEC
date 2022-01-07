@@ -1,4 +1,6 @@
 # WindowsEVTX-ETL_2HEC
+Send Windows Event(EVTX) and Analytics(ETL) files to a Splunk HTTP Event Collector.
+
 This script **requires** Powershell 7 to run. Powershell 7 vastly improves the handling of Windows Events and Trace files. https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2
 
 1. Download and unzip files.
@@ -19,3 +21,5 @@ This script **requires** Powershell 7 to run. Powershell 7 vastly improves the h
 ```
 SecondsMinusEarliest and SecondsMinusLatest set the time range the events are pulled from. Earliest would be the oldest 'TimeCreated' value looking backwards in seconds. And latest would be the 'TimeCreated' of the newest event. 
 If the EventFilePath has a space, enclose it in double quotes.
+
+This script is a work in progress!
